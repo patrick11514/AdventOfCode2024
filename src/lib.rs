@@ -13,3 +13,6 @@ pub fn load_file(day: u32) -> String {
     }
 }
 
+pub fn split_to_number(str: &str, ch: char) -> Vec<i32> {
+    str.split(ch).map(|item| item.parse::<i32>().unwrap()).collect()
+}
